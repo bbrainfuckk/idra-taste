@@ -6,6 +6,27 @@ Generated design is easy to spot: default fonts, screen gradients, even spacing,
 
 It works for any format: posters, covers, flyers, zines, labels and packaging, social posts, decks, editorial layouts, web pages, pixel art and motion.
 
+## Made with idra-taste
+
+Each piece below came from a short brief in a single Claude Code session, was rendered with `shot.mjs` and went through the keen-eye review. Each one starts from a different medium and movement.
+
+<img src="media/biyahe.jpg" alt="Biyahe: a magazine centrefold lettered like a Philippine jeepney route board, LOW TIDE RADIO in box letters over a yellow-to-red board, via Cubao, Quiapo and Makati" width="100%">
+
+**Biyahe**, magazine centrefold, 17 x 11 in. Jeepney signboard lettering from the Philippines: box letters that let the painted yellow-to-red board show through, a winged name plate, and the ticket price as the fare.
+
+<table>
+<tr>
+<td width="33%" valign="top"><img src="media/low-tide-radio.jpg" alt="Low Tide Radio: a two-colour Risograph record sleeve, a sunset over a tidal flat with pier posts, the horizon drawn as an FM radio dial"></td>
+<td width="33%" valign="top"><img src="media/compline.png" alt="Compline: four-shade pixel art of a moonlit chapel window, one candle lit, IDRA in pixel blackletter"></td>
+<td width="33%" valign="top"><img src="media/night-market.jpg" alt="Night Market of Small Lights: a pink and yellow silkscreen poster with a halftone paper lantern, sun rays and vertical Japanese type"></td>
+</tr>
+<tr>
+<td valign="top"><b>Low Tide Radio</b>, 12-inch sleeve. Two-drum Risograph: fluorescent orange and blue overprint to violet, and the horizon is a 1980s FM dial.</td>
+<td valign="top"><b>Compline</b>, cassette cover. Gothic 4-shade pixel art: a 125 x 125 screen in four colours at 12x, every pixel and letter placed by hand.</td>
+<td valign="top"><b>Night Market of Small Lights</b>, gig poster. Japanese psychedelic silkscreen: spot inks, a halftone lantern and vertical type.</td>
+</tr>
+</table>
+
 ## How it fits together
 
 | Layer | Provided by |
@@ -86,6 +107,7 @@ skills/idra-taste/
   assets/starter.html    sheet template with ink layers
   scripts/shot.mjs       render to PNG or PDF with headless Chrome or Edge
   scripts/serve.mjs      local http server for pages that read images
+media/                   the gallery images in this README
 setup.sh                 installs idra-taste and its companions
 ```
 
