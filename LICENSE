@@ -1,0 +1,77 @@
+IDRA Taste License 1.0
+
+Copyright (c) 2026 Marvin Sarreal Villanueva (IDRA). All rights reserved, except as granted below.
+
+"The Software" means everything in this repository: the skill, the style recipes, the references, the
+scripts, assets/print.js, assets/starter.html and the documentation. "Your work" means the designs,
+images, pages, prints, videos and other output you make by running the Software, and any recipe you
+write yourself from styles/_template.md.
+
+The Software is source available, not open source. You may read it and use it to make your own work.
+You may not copy it, share it, sell it or rebuild it.
+
+1. What you may do
+
+   a. Read and study the Software.
+   b. Download, install and run the Software, unmodified, on computers you own or control, to make
+      your work. This includes installing it as a Claude Code plugin or skill for an AI agent that you
+      direct.
+   c. Copy assets/print.js and assets/starter.html into your own design projects, as the skill directs,
+      change those copies as your project needs, and ship them inside your work (for example in a
+      poster's source file or a client's web page). You may not offer print.js on its own, as a
+      library, package or download.
+   d. Write your own recipes with styles/_template.md. Recipes you write are yours.
+   e. Use, publish and sell your work, for personal or commercial projects, including work for your own
+      clients, with no fee. You own your work. Credit ("Art direction with idra-taste") is welcome but
+      not required.
+
+2. What you may not do
+
+   a. Except as section 1 allows, copy, share, publish, distribute, sublicense, sell, rent or lend the
+      Software or any substantial part of it, in source or any other form. This includes the style
+      recipes and references, alone or as a collection.
+   b. Modify the Software, or make, share or publish modified versions of it or works based on it. You
+      may make small private changes needed to run it on your own computers, as long as you never share
+      them. Your project copies under section 1c and your own recipes are not affected by this.
+   c. Offer the Software, or anything built with it, to others as a product or service: for example a
+      hosted design tool, an API, an app, a style or template pack, or a prompt library. Making work for
+      your own clients is allowed (section 1e).
+   d. Recreate the Software: use its recipes, references, code or skill to build, or to help anyone
+      build, a skill, plugin, style library, tool or service that does the same job as the Software or
+      competes with it.
+   e. Use the Software or its documentation to train or fine-tune a machine learning model, or put them
+      in a dataset.
+   f. Remove or change this licence or the copyright notices.
+   g. Use the names IDRA or idra-taste, or the IDRA logo, to name or promote your own product. You may
+      say that a piece was made with idra-taste.
+
+3. Third-party parts
+
+   idra-taste bundles no code or fonts from other projects. The Risograph ink names and hex values
+   quoted in the recipes come from the riso-colors data (MIT), and the plugins, libraries and fonts the
+   Software installs or loads keep their own licences, listed in THIRD-PARTY.md. Nothing in this licence
+   limits what those terms allow for them.
+
+4. GitHub
+
+   This repository is public on GitHub. GitHub's Terms of Service let GitHub users view it and fork it
+   on GitHub. A fork carries this licence with it and gives no other rights.
+
+5. Ending
+
+   If you break this licence, your permission ends automatically. If you put things right within 30
+   days of being told, your permission comes back. Work you made while your permission was in place
+   stays yours.
+
+6. Other uses
+
+   For anything this licence does not allow (sharing, a hosted service, a custom arrangement), write to
+   marvin@idra-ai.com.
+
+7. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+   NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES
+   OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

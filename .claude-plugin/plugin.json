@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "idra-taste",
+  "displayName": "idra-taste",
+  "version": "0.2.0",
+  "description": "Art direction for design that looks made by a designer, not by AI. Real media, real movements, honest print marks, and a keen-eye review. Works with frontend-design, taste-skill and Impeccable.",
+  "author": {
+    "name": "Marvin Sarreal Villanueva",
+    "email": "marvin@idra-ai.com",
+    "url": "https://idra-ai.com"
+  },
+  "homepage": "https://github.com/bbrainfuckk/idra-taste",
+  "repository": "https://github.com/bbrainfuckk/idra-taste",
+  "license": "LicenseRef-IDRA-Taste-License-1.0",
+  "keywords": [
+    "design",
+    "art-direction",
+    "graphic-design",
+    "risograph",
+    "print",
+    "pixel-art",
+    "typography",
+    "anti-slop"
+  ]
+}

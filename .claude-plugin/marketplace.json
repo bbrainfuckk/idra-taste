@@ -1,0 +1,12 @@
+{
+  "name": "idra-taste",
+  "description": "Design that looks made by a designer, by IDRA.",
+  "owner": { "name": "IDRA", "email": "marvin@idra-ai.com", "url": "https://idra-ai.com" },
+  "plugins": [
+    {
+      "name": "idra-taste",
+      "source": ".",
+      "description": "Art direction from real media and movements, a seeded print-mark engine, and a keen-eye review."
+    }
+  ]
+}

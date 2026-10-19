@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled sheet</title>
+<!-- Fonts: the recipe's choice, from references/type.md. For print or offline renders, download them into fonts/ and use @font-face. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Family+Name&display=swap" rel="stylesheet"> -->
+<style>
+  /* The sheet: set its size in CSS px. Export at --scale to reach print resolution (3508 x 4961 px = A3 at 300 dpi). */
+  :root {
+    --w: 1200px;
+    --h: 1600px;
+    /* Inks and paper only. Every colour on the sheet comes from here or from an overprint. */
+    --paper: #f2eee3;
+    --ink-1: #ff48b0;
+    --ink-2: #3255a4;
+    --ink-key: #111111;
+  }
+  @page { size: var(--w) var(--h); margin: 0; }
+  html, body { margin: 0; background: #2a2a2a; }
+  body { display: grid; place-items: start center; min-height: 100vh; }
+  .sheet { position: relative; width: var(--w); height: var(--h); overflow: hidden; isolation: isolate; background: var(--paper); }
+  .ink { position: absolute; inset: 0; }
+  .ink-1 { color: var(--ink-1); }
+  .ink-2 { color: var(--ink-2); }
+  .ink-key { color: var(--ink-key); }
+  /* Review view: open with #gray (value structure). The #thumb read needs no CSS: scripts/shot.mjs renders the whole sheet and shrinks it to a tenth. */
+  html.gray .sheet { filter: grayscale(1); }
+  @media print { html, body { background: none; } }
+</style>
+</head>
+<body>
+<main class="sheet" id="sheet">
+  <!-- One element per ink. Everything inside a layer prints in that ink and shares its drift and texture. -->
+  <div class="ink ink-1" id="ink-1"></div>
+  <div class="ink ink-2" id="ink-2"></div>
+  <div class="ink ink-key" id="ink-key"></div>
+</main>
+<script src="print.js"></script>
+<script>
+  document.documentElement.classList.toggle('gray', location.hash === '#gray');
+
+  IdraPrint.install({ seed: 7, grain: 0.08, density: 0.06 });
+  IdraPrint.paper(document.getElementById('sheet'), getComputedStyle(document.documentElement).getPropertyValue('--paper').trim());
+
+  // Drift per layer, in px. The key layer moving against the colour layers is the most convincing.
+  IdraPrint.layer(document.getElementById('ink-1'), { offset: [0, 0] });
+  IdraPrint.layer(document.getElementById('ink-2'), { offset: [2, -1] });
+  IdraPrint.layer(document.getElementById('ink-key'), { offset: [-1, 2] });
+
+  async function draw() {
+    // Build the design here: SVG, type, and canvases from IdraPrint.halftone / IdraPrint.dither.
+  }
+
+  draw().then(IdraPrint.ready);
+</script>
+</body>
+</html>
